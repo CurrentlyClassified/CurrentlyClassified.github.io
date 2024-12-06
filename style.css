@@ -1,3 +1,4 @@
+.JohnDoe {
 body { 
   background-color:black; 
   font-family: 'Ubuntu Mono', 'Courier New', monospace; 
@@ -106,5 +107,6 @@ body>p, section, article{
 a{
   text-decoration: none;
   color: inherit;
+}
 }
 }
