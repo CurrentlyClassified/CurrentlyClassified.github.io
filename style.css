@@ -2,7 +2,8 @@ body {
   background-color:black; 
   font-family: 'Ubuntu Mono', 'Courier New', monospace; 
   line-height: 1em;
-  color:white; 
+  color:white;
+  box-sizing: content-box;
 }
 @media (width < 600px){
     #container{
