@@ -2,61 +2,9 @@ body {
   background-color:black; 
   font-family: 'Ubuntu Mono', 'Courier New', monospace; 
   line-height: 1em;
-  color:white;
-}
-@media (width < 600px){
-    #container{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  align-items: center;
+  color:white; 
 }
 
-body>header, footer{
-  text-align: center;
-  font-size:12pt;
-  padding: 10px;
-}
-
-body>p, section, article{
-  text-align: center;
-  font-size:12pt;
-}
-
-#container>nav{
-  color:white;
-  width:30%;
-  text-align: center;
-  border-radius:10px;
-  border: thick solid;
-  font-size: x-large;
-  box-sizing: border-box;
-}
-
-#container>#Sony{
-  background-color: blue;
-  color:white;
-  font-family: 'clarendon';
-}
-
-#container>#Nintendo{
-  background-color: white;
-  color: red;
-  font-family: 'Pretendo';
-}
-
-#container>#Microsoft{
-  background-color: lime;
-  border:thick solid white;
-  font-family:'X360';
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-}
-@media(width >= 600px){
 #container{
   display:flex;
   flex-direction:row;
@@ -64,23 +12,17 @@ a{
   align-items: center;
 }
 
-body>header, footer{
-  text-align: center;
-  font-size:12pt;
-  padding: 10px;
-}
-
-body>p, section, article{
+body>p{
   text-align: center;
   font-size:12pt;
 }
 
-#container>nav{
+#container>div{
   color:white;
   width:30%;
   text-align: center;
   border-radius:10px;
-  border: thick solid;
+  border: thick, solid;
   font-size: x-large;
   box-sizing: border-box;
 }
@@ -99,12 +41,11 @@ body>p, section, article{
 
 #container>#Microsoft{
   background-color: lime;
-  border:thick solid white;
+  border:thick, solid, white;
   font-family:'X360';
 }
 
 a{
   text-decoration: none;
   color: inherit;
-}
 }
