@@ -1,184 +1,110 @@
 body { 
-  background-color:black !important; 
-  font-family: 'Ubuntu Mono', 'Courier New', monospace !important; 
-  line-height: 1em !important;
-  color:white !important;
+  background-color:black; 
+  font-family: 'Ubuntu Mono', 'Courier New', monospace; 
+  line-height: 1em;
+  color:white; 
 }
 @media (width < 600px){
-    #endme{
-  display:flex !important;
-  flex-direction:column !important;
-  justify-content:space-between !important;
-  align-items: center !important;
+    #container{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
 }
 
 body>header, footer{
-  text-align: center !important;
-  font-size:12pt !important;
-  padding: 10px !important;
+  text-align: center;
+  font-size:12pt;
+  padding: 10px;
 }
 
 body>p, section, article{
-  text-align: center !important;
-  font-size:12pt !important;
+  text-align: center;
+  font-size:12pt;
 }
 
-#endme>nav{
-  color:white !important;
-  width:30% !important;
-  text-align: center !important;
-  border-radius:10px !important;
-  border: thick solid !important;
-  font-size: x-large !important;
+#container>nav{
+  color:white;
+  width:30%;
+  text-align: center;
+  border-radius:10px;
+  border: thick solid;
+  font-size: x-large;
+  box-sizing: border-box;
 }
 
-#endme>#Sony{
-  background-color: blue !important;
-  color:white !important;
-  font-family: 'clarendon' !important;
+#container>#Sony{
+  background-color: blue;
+  color:white;
+  font-family: 'clarendon';
 }
 
-#endme>#Nintendo{
-  background-color: white !important;
-  color: red !important;
-  font-family: 'Pretendo' !important;
+#container>#Nintendo{
+  background-color: white;
+  color: red;
+  font-family: 'Pretendo';
 }
 
-#endme>#Microsoft{
-  background-color: lime !important;
-  border:thick solid white !important;
-  font-family:'X360' !important;
+#container>#Microsoft{
+  background-color: lime;
+  border:thick solid white;
+  font-family:'X360';
 }
 
 a{
-  text-decoration: none !important;
-  color: inherit !important;
+  text-decoration: none;
+  color: inherit;
 }
 }
 @media(width >= 600px){
-#endme{
-  display:flex !important;
-  flex-direction:row !important;
-  justify-content:space-between !important;
-  align-items: center !important;
+#container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
 }
 
 body>header, footer{
-  text-align: center !important;
-  font-size:12pt !important;
-  padding: 10px !important;
+  text-align: center;
+  font-size:12pt;
+  padding: 10px;
 }
 
 body>p, section, article{
-  text-align: center !important;
-  font-size:12pt !important;
+  text-align: center;
+  font-size:12pt;
 }
 
-#endme>nav{
-  color:white !important;
-  width:30% !important;
-  text-align: center !important;
-  border-radius:10px !important;
-  border: thick solid !important;
-  font-size: x-large !important;
-  box-sizing: border-box !important;
+#container>nav{
+  color:white;
+  width:30%;
+  text-align: center;
+  border-radius:10px;
+  border: thick solid;
+  font-size: x-large;
+  box-sizing: border-box;
 }
 
-#endme>#Sony{
-  background-color: blue !important;
-  color:white !important;
-  font-family: 'clarendon' !important;
+#container>#Sony{
+  background-color: blue;
+  color:white;
+  font-family: 'clarendon';
 }
 
-#endme>#Nintendo{
-  background-color: white !important;
-  color: red !important;
-  font-family: 'Pretendo' !important;
+#container>#Nintendo{
+  background-color: white;
+  color: red;
+  font-family: 'Pretendo';
 }
 
-#endme>#Microsoft{
-  background-color: lime !important;
-  border:thick solid white !important;
-  font-family:'X360' !important;
+#container>#Microsoft{
+  background-color: lime;
+  border:thick solid white;
+  font-family:'X360';
 }
 
 a{
-  text-decoration: none !important;
-  color: inherit !important;
+  text-decoration: none;
+  color: inherit;
 }
-}
-#court {
-  position: relative;
-  border: 3px solid blue;
-  width: 500px;
-  height: 250px;
-}
-
-#ball {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: red;
-  animation-name: bounce;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: 5;
-}
-
-@keyframes bounce {
-  from {
-    left: 0px;
-    top: 0px;
-  }
-
-  10% {
-    left: 50px;
-    top: 200px;
-  }
-
-  20% {
-    left: 100px;
-    top: 20px;
-  }
-
-  30% {
-    left: 15px;
-    top: 200px;
-  }
-
-  40% {
-    left: 200px;
-    top: 40px;
-  }
-
-  50% {
-    left: 25px;
-    top: 200px;
-  }
-
-  60% {
-    left: 300px;
-    top: 60px;
-  }
-
-  70% {
-    left: 35px;
-    top: 200px;
-  }
-  
-  80% {
-    left: 400px;
-    top: 60px;
-  }
-
-  90% {
-    left: 45px;
-    top: 200px;
-  }
-
-  to {
-    left: 500px;
-    top: 80px;
-  }
 }
