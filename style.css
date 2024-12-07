@@ -3,7 +3,6 @@ body {
   font-family: 'Ubuntu Mono', 'Courier New', monospace !important; 
   line-height: 1em !important;
   color:white !important;
-  box-sizing: content-box !important;
 }
 @media (width < 600px){
     #container{
@@ -11,23 +10,17 @@ body {
   flex-direction:column !important;
   justify-content:space-between !important;
   align-items: center !important;
-      
-  box-sizing: content-box !important;
 }
 
 body>header, footer{
   text-align: center !important;
   font-size:12pt !important;
   padding: 10px !important;
-  
-  box-sizing: content-box !important;
 }
 
 body>p, section, article{
   text-align: center !important;
   font-size:12pt !important;
-  
-  box-sizing: content-box !important;
 }
 
 #container>nav{
@@ -37,7 +30,6 @@ body>p, section, article{
   border-radius:10px !important;
   border: thick solid !important;
   font-size: x-large !important;
-  box-sizing: border-box !important;
 }
 
 #container>#Sony{
