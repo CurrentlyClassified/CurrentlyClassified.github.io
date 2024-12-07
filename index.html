@@ -22,10 +22,17 @@
         <p><a href="Micro.html" tabindex="3"><b>Microsoft</b></a></p>
       </nav>
     </main>
-    <footer>Click one to go to the article!</footer>
+    <footer id="agony">Click one to go to the article!</footer>
     <footer>Needless to say, I should not be a graphic designer.</footer>
     <div id="court">
       <div id="ball"></div>
     </div>
+    <button id="pain" type="button">Click</button>
+    <script>
+      document.getElementById("pain").addEventListener("click", function() {
+        suffering = document.getElementById("agony");
+        suffering.innerHTML = "Surprise!";
+      });
+    </script>
   </body>
 </html>
