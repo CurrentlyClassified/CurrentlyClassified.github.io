@@ -26,7 +26,7 @@ body>p, section, article{
 
 #container>nav{
   color:white !important;
-  width:30%;
+  width:30% !important;
   text-align: center !important;
   border-radius:10px !important;
   border: thick solid !important;
@@ -38,21 +38,18 @@ body>p, section, article{
   background-color: blue !important;
   color:white !important;
   font-family: 'clarendon' !important;
-  animation: grow 1s forwards;
 }
 
 #container>#Nintendo{
   background-color: white !important;
   color: red !important;
   font-family: 'Pretendo' !important;
-  animation: grow 1s forwards;
 }
 
 #container>#Microsoft{
   background-color: lime !important;
   border:thick solid white !important;
   font-family:'X360' !important;
-  animation: grow 1s forwards;
 }
 
 a{
@@ -93,21 +90,18 @@ body>p, section, article{
   background-color: blue !important;
   color:white !important;
   font-family: 'clarendon' !important;
-  animation: grow 1s forwards;
 }
 
 #container>#Nintendo{
   background-color: white !important;
   color: red !important;
   font-family: 'Pretendo' !important;
-  animation: grow 1s forwards;
 }
 
 #container>#Microsoft{
   background-color: lime !important;
   border:thick solid white !important;
   font-family:'X360' !important;
-  animation: grow 1s forwards;
 }
 
 a{
