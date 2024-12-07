@@ -45,27 +45,18 @@ body>p, section, article{
   background-color: blue !important;
   color:white !important;
   font-family: 'clarendon' !important;
-  animation: grow !important;
-  animation-duration: 1s !important;
-  animation-timing-function: linear !important;
 }
 
 #container>#Nintendo{
   background-color: white !important;
   color: red !important;
   font-family: 'Pretendo' !important;
-  animation: grow !important;
-  animation-duration: 1s !important;
-  animation-timing-function: linear !important;
 }
 
 #container>#Microsoft{
   background-color: lime !important;
   border:thick solid white !important;
   font-family:'X360' !important;
-  animation: grow !important;
-  animation-duration: 1s !important;
-  animation-timing-function: linear !important;
 }
 
 a{
@@ -106,27 +97,18 @@ body>p, section, article{
   background-color: blue !important;
   color:white !important;
   font-family: 'clarendon' !important;
-  animation: grow !important;
-  animation-duration: 1s !important;
-  animation-timing-function: linear !important;
 }
 
 #container>#Nintendo{
   background-color: white !important;
   color: red !important;
   font-family: 'Pretendo' !important;
-  animation: grow !important;
-  animation-duration: 1s !important;
-  animation-timing-function: linear !important;
 }
 
 #container>#Microsoft{
   background-color: lime !important;
   border:thick solid white !important;
   font-family:'X360' !important;
-  animation: grow !important;
-  animation-duration: 1s !important;
-  animation-timing-function: linear !important;
 }
 
 a{
