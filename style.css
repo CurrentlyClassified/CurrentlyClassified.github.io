@@ -4,6 +4,7 @@ body {
   line-height: 1em !important;
   color:white !important; 
 }
+
 @media (width < 600px){
     #container{
   display:flex !important;
@@ -37,18 +38,21 @@ body>p, section, article{
   background-color: blue !important;
   color:white !important;
   font-family: 'clarendon' !important;
+  animation: grow 1s forwards;
 }
 
 #container>#Nintendo{
   background-color: white !important;
   color: red !important;
   font-family: 'Pretendo' !important;
+  animation: grow 1s forwards;
 }
 
 #container>#Microsoft{
   background-color: lime !important;
   border:thick solid white !important;
   font-family:'X360' !important;
+  animation: grow 1s forwards;
 }
 
 a{
@@ -89,22 +93,33 @@ body>p, section, article{
   background-color: blue !important;
   color:white !important;
   font-family: 'clarendon' !important;
+  animation: grow 1s forwards;
 }
 
 #container>#Nintendo{
   background-color: white !important;
   color: red !important;
   font-family: 'Pretendo' !important;
+  animation: grow 1s forwards;
 }
 
 #container>#Microsoft{
   background-color: lime !important;
   border:thick solid white !important;
   font-family:'X360' !important;
+  animation: grow 1s forwards;
 }
 
 a{
   text-decoration: none !important;
   color: inherit !important;
 }
+}
+@keyframes grow{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 30%;
+  }
 }
