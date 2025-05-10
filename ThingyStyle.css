@@ -1,0 +1,92 @@
+body {
+  background-color:black;
+  font-family: 'Ubuntu Mono', 'Courier New', monospace;
+  line-height: 1em;
+  color:white;
+}
+
+.items{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
+#container>nav{
+  color:white;
+  width: 98%;
+  text-align: center;
+  border-radius:10px;
+  border: 3px solid;
+  font-size: x-large;
+  box-sizing: border-box;
+  margin:auto;
+  overflow-y:auto;
+  height:300px;
+}
+
+.tagfilters{
+  color:white;
+  width:30%;
+  text-align: center;
+  border-radius:10px;
+  border: thick solid;
+  font-size: x-large;
+  box-sizing: border-box;
+  margin:auto;
+  overflow-y:auto;
+  height:400px;
+}
+
+#container>.panel{
+  border: 1px solid white;
+  width:30%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.panel{
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.name{
+  font-size:20px;
+}
+
+.tags{
+  font-size:20px;
+}
+
+.tag{
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+body>header, footer{
+  text-align: center;
+  font-size:12pt;
+  padding: 10px;
+}
+
+body>p{
+  text-align: center;
+  font-size:10pt;
+}
+
+a{
+  text-decoration: none;
+  color: mediumspringgreen;
+}
+
+#search{
+  width: 97.5%;
+  margin:10px;
+  text-align: center;
+  align-self: center;
+}
