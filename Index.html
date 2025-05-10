@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/Muse.ico" sizes="any">
+  <meta charset="UTF-8">
+  <title>Jukebox Archive</title>
+  <link rel="stylesheet" href="ThingyStyle.css" type="text/css">
+  <!--<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+  <script>
+    function myFunction() {
+      // Declare variables
+      let input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('search');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("items");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>Welcome to The Jukebox Archive</header>
+  <p>This is the earliest working version.</p>
+  <p>It is an archive of music I've found over time.</p>
+  <p>It can also show my music preferences on any given day, more or less in order.</p>
+  <p>Enjoy!</p>
+  <main id="container">
+    <label for="search"></label><input type="text" id="search" onkeyup="myFunction()" placeholder="Search by title"/>
+    <nav>
+      <ul class="items" id="items">
+        <!--
+        <li>
+          <div class="panel">
+            <a class="name" href=""></a>
+            <p class="author"></p>
+            <p class="linkText"></p>
+            <p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>
+          </div>
+        </li>
+        -->
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=0C8i6tOjt-M&ab_channel=TheRollingStones-Topic">Tumbling Dice</a>
+            <p class="author">The Rolling Stones</p>
+            <p class="linkText">https://www.youtube.com/watch?v=0C8i6tOjt-M&ab_channel=TheRollingStones-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=QwVjTlTdIDQ&ab_channel=billyjoelVEVO">Piano Man</a>
+            <p class="author">Billy Joel</p>
+            <p class="linkText">https://www.youtube.com/watch?v=QwVjTlTdIDQ&ab_channel=billyjoelVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=m50p-XScreM&ab_channel=katiekxxorangedot">We Didn't Start The Fire</a>
+            <p class="author">Billy Joel</p>
+            <p class="linkText">https://www.youtube.com/watch?v=m50p-XScreM&ab_channel=katiekxxorangedot</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=o1ASIT5DqN0&ab_channel=billyjoelVEVO">The Ballad of Billy The Kid</a>
+            <p class="author">Billy Joel</p>
+            <p class="linkText">https://www.youtube.com/watch?v=o1ASIT5DqN0&ab_channel=billyjoelVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=3xZzGtDW2p4&ab_channel=TheWho-Topic">Pinball Wizard</a>
+            <p class="author">The Who</p>
+            <p class="linkText">https://www.youtube.com/watch?v=3xZzGtDW2p4&ab_channel=TheWho-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=RpLw8VW-R7I&ab_channel=AG">Starman</a>
+            <p class="author">David Bowie</p>
+            <p class="linkText">https://www.youtube.com/watch?v=RpLw8VW-R7I&ab_channel=AG</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=nrIPxlFzDi0&ab_channel=ABKCOVEVO">Satisfaction</a>
+            <p class="author">The Rolling Stones</p>
+            <p class="linkText">https://www.youtube.com/watch?v=nrIPxlFzDi0&ab_channel=ABKCOVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Zh-ZUrc-aLI&ab_channel=RascalFlatts-Topic">Life is a Highway</a>
+            <p class="author">Rascal Flatts (cover), original by Tom Cochrane</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Zh-ZUrc-aLI&ab_channel=RascalFlatts-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=x-zxBNz3XbM">Mother's Little Helper</a>
+            <p class="author">The Rolling Stones</p>
+            <p class="linkText">https://www.youtube.com/watch?v=x-zxBNz3XbM</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=x3FcfuVo6ks&ab_channel=LyricsVideoSynchronized">Route 66</a>
+            <p class="author">John Mayer</p>
+            <p class="linkText">https://www.youtube.com/watch?v=x3FcfuVo6ks&ab_channel=LyricsVideoSynchronized</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=fP8JS-MjG5c&ab_channel=JamesTaylor-Topic">Our Town</a>
+            <p class="author">James Taylor</p>
+            <p class="linkText">https://www.youtube.com/watch?v=fP8JS-MjG5c&ab_channel=JamesTaylor-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=q4grUIad8JM&ab_channel=BradPaisley-Topic">Find Yourself</a>
+            <p class="author">Brad Paisley</p>
+            <p class="linkText">https://www.youtube.com/watch?v=q4grUIad8JM&ab_channel=BradPaisley-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=24csCK7R66U&ab_channel=BradPaisley-Topic">Behind The Clouds</a>
+            <p class="author">Brad Paisley</p>
+            <p class="linkText">https://www.youtube.com/watch?v=24csCK7R66U&ab_channel=BradPaisley-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=PHn5Q7hCjxw&ab_channel=FallOutBoy-Topic">Immortals</a>
+            <p class="author">Fall Out Boy</p>
+            <p class="linkText">https://www.youtube.com/watch?v=PHn5Q7hCjxw&ab_channel=FallOutBoy-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=n2bLn24sjdM&ab_channel=Xminey">Angel</a>
+            <p class="author">Theory of a Deadman</p>
+            <p class="linkText">https://www.youtube.com/watch?v=n2bLn24sjdM&ab_channel=Xminey</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Uw4qGfUJWSM&ab_channel=Joeylyricsmania">Wrong Side of Heaven</a>
+            <p class="author">Five Finger Death Punch</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Uw4qGfUJWSM&ab_channel=Joeylyricsmania</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=wuJIqmha2Hk&ab_channel=ElectricLightOrchestra-Topic">Mr. Blue Sky</a>
+            <p class="author">Electric Light Orchestra</p>
+            <p class="linkText">https://www.youtube.com/watch?v=wuJIqmha2Hk&ab_channel=ElectricLightOrchestra-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=MjwttGizNEs&ab_channel=AvengedSevenfold-Topic">Hail To The King</a>
+            <p class="author">Avenged Sevenfold</p>
+            <p class="linkText">https://www.youtube.com/watch?v=MjwttGizNEs&ab_channel=AvengedSevenfold-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=BdEe5SpdIuo&ab_channel=EltonJohn-Topic">Rocket Man</a>
+            <p class="author">Elton John</p>
+            <p class="linkText">https://www.youtube.com/watch?v=BdEe5SpdIuo&ab_channel=EltonJohn-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=PVn6b9QQZeM&ab_channel=JessHebert">Don't Fear The Reaper</a>
+            <p class="author">Blue Öyster Cult</p>
+            <p class="linkText">https://www.youtube.com/watch?v=PVn6b9QQZeM&ab_channel=JessHebert</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=TZThOsCv2Mw&ab_channel=SonicSoundTV">Black Hole Sun</a>
+            <p class="author">Soundgarden</p>
+            <p class="linkText">https://www.youtube.com/watch?v=TZThOsCv2Mw&ab_channel=SonicSoundTV</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=GgnClrx8N2k&ab_channel=ABKCOVEVO">Sympathy For The Devil</a>
+            <p class="author">The Rolling Stones</p>
+            <p class="linkText">https://www.youtube.com/watch?v=GgnClrx8N2k&ab_channel=ABKCOVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=m2zUrruKjDQ&ab_channel=TheKillers-Topic">Mr. Brightside</a>
+            <p class="author">The Killers</p>
+            <p class="linkText">https://www.youtube.com/watch?v=m2zUrruKjDQ&ab_channel=TheKillers-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=O4irXQhgMqg&ab_channel=ABKCOVEVO">Paint It, Black</a>
+            <p class="author">The Rolling Stones</p>
+            <p class="linkText">https://www.youtube.com/watch?v=O4irXQhgMqg&ab_channel=ABKCOVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=j509IEMcFmc&ab_channel=Gruizux">Mr. Blue Sky (short version)</a>
+            <p class="author">Electric Light Orchestra</p>
+            <p class="linkText">https://www.youtube.com/watch?v=j509IEMcFmc&ab_channel=Gruizux</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=JESuKSbqkIc&ab_channel=dyaalicious">Hold On Forever</a>
+            <p class="author">Rob Thomas</p>
+            <p class="linkText">https://www.youtube.com/watch?v=JESuKSbqkIc&ab_channel=dyaalicious</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=PxtQ5cazBtA&ab_channel=O.A.R.%28OfARevolution...%29">Peace</a>
+            <p class="author">O.A.R. (Of A Revolution...)</p>
+            <p class="linkText">https://www.youtube.com/watch?v=PxtQ5cazBtA&ab_channel=O.A.R.%28OfARevolution...%29</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=xP6wdkRbtRk&ab_channel=TajTracks">Say You Won't Let Go</a>
+            <p class="author">James Arthur</p>
+            <p class="linkText">https://www.youtube.com/watch?v=xP6wdkRbtRk&ab_channel=TajTracks</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=pbT3uvOl3Dk&ab_channel=daughtryVEVO">Waiting For Superman</a>
+            <p class="author">Daughtry</p>
+            <p class="linkText">https://www.youtube.com/watch?v=pbT3uvOl3Dk&ab_channel=daughtryVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=5JqY-6q-RNA&ab_channel=KerryPaulazzo">THE PHOENIX</a>
+            <p class="author">Fall Out Boy</p>
+            <p class="linkText">https://www.youtube.com/watch?v=5JqY-6q-RNA&ab_channel=KerryPaulazzo</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=6Sg2XAlK2T8&ab_channel=Shinedown">Daylight</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=6Sg2XAlK2T8&ab_channel=Shinedown</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=HdimnI4Xtc0&ab_channel=SherylCrow-Topic">Real Gone</a>
+            <p class="author">Sheryl Crow</p>
+            <p class="linkText">https://www.youtube.com/watch?v=HdimnI4Xtc0&ab_channel=SherylCrow-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=CFlMy48ui9s&ab_channel=TheboringLyrics">Fly Me To The Moon</a>
+            <p class="author">Frank Sinatra (cover), original by Bart Howard, originally titled In Other Words</p>
+            <p class="linkText">https://www.youtube.com/watch?v=CFlMy48ui9s&ab_channel=TheboringLyrics</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=AnWWj6xOleY&ab_channel=__wonderland">Time in a Bottle</a>
+            <p class="author">Jim Croce</p>
+            <p class="linkText">https://www.youtube.com/watch?v=AnWWj6xOleY&ab_channel=__wonderland</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=aNO6yd66PpA&ab_channel=hausrihanna">Iris</a>
+            <p class="author">The Goo Goo Dolls</p>
+            <p class="linkText">https://www.youtube.com/watch?v=aNO6yd66PpA&ab_channel=hausrihanna</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://web.archive.org/web/20230314155410/https://www.youtube.com/watch?v=Yim4--J44gk">Counting Stars</a>
+            <p class="author">OneRepublic</p>
+            <p class="linkText"></p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=x6zypc_LhnM&ab_channel=VinceGuaraldiVEVO">Linus & Lucy</a>
+            <p class="author">Vince Guaraldi Trio</p>
+            <p class="linkText">https://www.youtube.com/watch?v=x6zypc_LhnM&ab_channel=VinceGuaraldiVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=6y_NJg-xoeE&ab_channel=MonstercatUncaged">New Game</a>
+            <p class="author">Nitro Fun</p>
+            <p class="linkText">https://www.youtube.com/watch?v=6y_NJg-xoeE&ab_channel=MonstercatUncaged</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=VGh5DV0D3wk&ab_channel=MonstercatUncaged">Final Boss</a>
+            <p class="author">Nitro Fun</p>
+            <p class="linkText">https://www.youtube.com/watch?v=VGh5DV0D3wk&ab_channel=MonstercatUncaged</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=mdaCDsN1FJ0&ab_channel=MonstercatUncaged">Cheat Codes</a>
+            <p class="author">Nitro Fun</p>
+            <p class="linkText">https://www.youtube.com/watch?v=mdaCDsN1FJ0&ab_channel=MonstercatUncaged</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=VefpeL4tqh0&ab_channel=MonstercatUncaged">Cheat Codes VIP</a>
+            <p class="author">Nitro Fun</p>
+            <p class="linkText">https://www.youtube.com/watch?v=VefpeL4tqh0&ab_channel=MonstercatUncaged</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=xTcb1iddrWU&ab_channel=Vooshi">Long Live the New Fresh (instrumental)</a>
+            <p class="author">Danimal Cannon</p>
+            <p class="linkText">https://www.youtube.com/watch?v=xTcb1iddrWU&ab_channel=Vooshi</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=HCp-IpR54ZY&ab_channel=MonstercatUncaged">PIXEL</a>
+            <p class="author">Tokyo Machine</p>
+            <p class="linkText">https://www.youtube.com/watch?v=HCp-IpR54ZY&ab_channel=MonstercatUncaged</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=wOGWrbIYPqY&ab_channel=TheWho-Topic">Behind Blue Eyes</a>
+            <p class="author">The Who</p>
+            <p class="linkText">https://www.youtube.com/watch?v=wOGWrbIYPqY&ab_channel=TheWho-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=_NzLs-xSss0&ab_channel=TheWho-Topic">Won't Get Fooled Again</a>
+            <p class="author">The Who</p>
+            <p class="linkText">https://www.youtube.com/watch?v=_NzLs-xSss0&ab_channel=TheWho-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=rIbMbXjbW98&ab_channel=TheWho-Topic">Baba O'Riley</a>
+            <p class="author">The Who</p>
+            <p class="linkText">https://www.youtube.com/watch?v=rIbMbXjbW98&ab_channel=TheWho-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=W_TOsFvnmeQ&ab_channel=Foreigner-Topic">Juke Box Hero</a>
+            <p class="author">Foreigner</p>
+            <p class="linkText">https://www.youtube.com/watch?v=W_TOsFvnmeQ&ab_channel=Foreigner-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=BfrUQA2tb6M&ab_channel=TheWho-Topic">Eminence Front</a>
+            <p class="author">The Who</p>
+            <p class="linkText">https://www.youtube.com/watch?v=BfrUQA2tb6M&ab_channel=TheWho-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=8OyBtMPqpNY&ab_channel=R.E.M.-Topic">It's The End of The World As We Know It</a>
+            <p class="author">R.E.M.</p>
+            <p class="linkText">https://www.youtube.com/watch?v=8OyBtMPqpNY&ab_channel=R.E.M.-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=ngDJIjbAvz4&ab_channel=DonMcLean-Topic">American Pie</a>
+            <p class="author">Don McLean</p>
+            <p class="linkText">https://www.youtube.com/watch?v=ngDJIjbAvz4&ab_channel=DonMcLean-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=uLtRVm_tkxI&ab_channel=DanimalCannon">Logic Gatekeeper</a>
+            <p class="author">Danimal Cannon & Zef</p>
+            <p class="linkText">https://www.youtube.com/watch?v=uLtRVm_tkxI&ab_channel=DanimalCannon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=6j-eb-8huQc&ab_channel=DanimalCannon">Corrupted</a>
+            <p class="author">Danimal Cannon & Zef</p>
+            <p class="linkText">https://www.youtube.com/watch?v=6j-eb-8huQc&ab_channel=DanimalCannon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=eGynKE9eRAs&ab_channel=BigGiantCircles">The Trials Of MAN</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=eGynKE9eRAs&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=dnwdYWXuU4s&ab_channel=BigGiantCircles">No Party Like a Mojang Party</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=dnwdYWXuU4s&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=_i0iBs-J5BU&ab_channel=AngieJedziniak">These Days</a>
+            <p class="author">Foo Fighters</p>
+            <p class="linkText">https://www.youtube.com/watch?v=_i0iBs-J5BU&ab_channel=AngieJedziniak</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=8pHELrsqGgU&ab_channel=CalgaryFlames1000">Everlong</a>
+            <p class="author">Foo Fighters</p>
+            <p class="linkText">https://www.youtube.com/watch?v=8pHELrsqGgU&ab_channel=CalgaryFlames1000</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=c-lF0eF4XP8&ab_channel=KingLance">Sound of Madness</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=c-lF0eF4XP8&ab_channel=KingLance</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Mj_hApbc5qg&ab_channel=SaunaMongols">Diamond Eyes</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Mj_hApbc5qg&ab_channel=SaunaMongols</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=i_q5hmlBIIE&ab_channel=RockLyricsHQ">Fly From the Inside</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=i_q5hmlBIIE&ab_channel=RockLyricsHQ</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=JsYsUjWdjws&ab_channel=Dav1d01994">I Own You</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=JsYsUjWdjws&ab_channel=Dav1d01994</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=m326LNIRB3k&ab_channel=YlovesMUSIC">Pompeii</a>
+            <p class="author">Bastille</p>
+            <p class="linkText">https://www.youtube.com/watch?v=m326LNIRB3k&ab_channel=YlovesMUSIC</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=eLG_K7X2BaE&ab_channel=DanimalCannon">Chronos</a>
+            <p class="author">Danimal Cannon & Zef</p>
+            <p class="linkText">https://www.youtube.com/watch?v=eLG_K7X2BaE&ab_channel=DanimalCannon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Ayw8BJ8NUEU&ab_channel=DanimalCannon">Agrobacter</a>
+            <p class="author">Danimal Cannon</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Ayw8BJ8NUEU&ab_channel=DanimalCannon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=p1XpTZPILXM&ab_channel=DanimalCannon">The Lunar Whale</a>
+            <p class="author">Danimal Cannon & Zef</p>
+            <p class="linkText">https://www.youtube.com/watch?v=p1XpTZPILXM&ab_channel=DanimalCannon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=9TTnTu3ql_g&ab_channel=chipzel">Spectra</a>
+            <p class="author">Chipzel</p>
+            <p class="linkText">https://www.youtube.com/watch?v=9TTnTu3ql_g&ab_channel=chipzel</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=pD3JoYx9hfw&ab_channel=DanimalCannon">Legacy</a>
+            <p class="author">Danimal Cannon & Zef</p>
+            <p class="linkText">https://www.youtube.com/watch?v=pD3JoYx9hfw&ab_channel=DanimalCannon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=xPmAHhcWEvE&ab_channel=BigGiantCircles">The Glory Days</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=xPmAHhcWEvE&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=RF1rFSoN3JQ&ab_channel=BigGiantCircles">Go For Distance</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=RF1rFSoN3JQ&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=ALq1ENqfu8E&ab_channel=BigGiantCircles">Houston</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=ALq1ENqfu8E&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=yhviMWU_AxM&ab_channel=BigGiantCircles">Sevcon</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=yhviMWU_AxM&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=TF5IETKtvGg&ab_channel=BigGiantCircles">Vindicate Me (instrumental)</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=TF5IETKtvGg&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=izMEU4orFBU&ab_channel=BigGiantCircles">Peanut Butter Cupquakes</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=izMEU4orFBU&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=9OquWmdUYXw&ab_channel=BigGiantCircles">Chip Zeal</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=9OquWmdUYXw&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=vnS_En5xi_Q&ab_channel=BigGiantCircles">Katana Blaster</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=vnS_En5xi_Q&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=9ePz9RKRU1s&ab_channel=MDK">Lightspeed</a>
+            <p class="author">MDK & Sterrezo</p>
+            <p class="linkText">https://www.youtube.com/watch?v=9ePz9RKRU1s&ab_channel=MDK</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Zo_xr_XlU9I&ab_channel=wolfluver3055">Burning Bright</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Zo_xr_XlU9I&ab_channel=wolfluver3055</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=9Nox9JOoMA4&ab_channel=XxDark_EclipsexX">Break</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=9Nox9JOoMA4&ab_channel=XxDark_EclipsexX</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Ye9hGotPPVk&ab_channel=EltonJohn-Topic">I'm Still Standing</a>
+            <p class="author">Elton John</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Ye9hGotPPVk&ab_channel=EltonJohn-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=O5xlkceY5Ag&ab_channel=XxKathrynxX">The Crow & The Butterfly</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=O5xlkceY5Ag&ab_channel=XxKathrynxX</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=2X_2IdybTV0&ab_channel=kansasVEVO">Carry On Wayward Son</a>
+            <p class="author">Kansas</p>
+            <p class="linkText">https://www.youtube.com/watch?v=2X_2IdybTV0&ab_channel=kansasVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=yK0P1Bk8Cx4&ab_channel=KennyLogginsVEVO">Danger Zone</a>
+            <p class="author">Kenny Loggins</p>
+            <p class="linkText">https://www.youtube.com/watch?v=yK0P1Bk8Cx4&ab_channel=KennyLogginsVEVO</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://web.archive.org/web/20211019032524/https://www.youtube.com/watch?v=1JGkJ6bezDQ">Thunderstruck</a>
+            <p class="author">AC/DC</p>
+            <p class="linkText">https://web.archive.org/web/20211019032524/https://www.youtube.com/watch?v=1JGkJ6bezDQ</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=7GLkvCrcExU&ab_channel=wtfomgstudios">Shepherd of Fire</a>
+            <p class="author">Avenged Sevenfold</p>
+            <p class="linkText">https://www.youtube.com/watch?v=7GLkvCrcExU&ab_channel=wtfomgstudios</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=LiTucKt-gM4&ab_channel=BarenakedLadies%28official%29">Odds Are</a>
+            <p class="author">Barenaked Ladies</p>
+            <p class="linkText">https://www.youtube.com/watch?v=LiTucKt-gM4&ab_channel=BarenakedLadies%28official%29</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=87l9IhZkUuw">Blackout City</a>
+            <p class="author">Anamanaguchi</p>
+            <p class="linkText">https://www.youtube.com/watch?v=87l9IhZkUuw</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=jVO8sUrs-Pw&ab_channel=Manres">Wake Me Up When September Ends</a>
+            <p class="author">Green Day</p>
+            <p class="linkText">https://www.youtube.com/watch?v=jVO8sUrs-Pw&ab_channel=Manres</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=TLBk6Bj2Ja4&ab_channel=ic3c4ts">Beautiful Day</a>
+            <p class="author">U2</p>
+            <p class="linkText">https://www.youtube.com/watch?v=TLBk6Bj2Ja4&ab_channel=ic3c4ts</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=jHRXlK2SnQ8">One</a>
+            <p class="author">U2</p>
+            <p class="linkText">https://www.youtube.com/watch?v=jHRXlK2SnQ8</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=EzeDqRhM09w">With or Without You</a>
+            <p class="author">U2</p>
+            <p class="linkText">https://www.youtube.com/watch?v=EzeDqRhM09w</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Sz4ipOHyMd8&ab_channel=ShYeah13">45</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Sz4ipOHyMd8&ab_channel=ShYeah13</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=h6oIbcr4IgM">Miracle</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=h6oIbcr4IgM</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=oMfMUfgjiLg&ab_channel=GunsN%27Roses-Topic">Sweet Child O' Mine</a>
+            <p class="author">Guns N' Roses</p>
+            <p class="linkText">https://www.youtube.com/watch?v=oMfMUfgjiLg&ab_channel=GunsN%27Roses-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=PfD4wIcEJAg&ab_channel=Starcadian-Topic">Alien Victory</a>
+            <p class="author">Starcadian</p>
+            <p class="linkText">https://www.youtube.com/watch?v=PfD4wIcEJAg&ab_channel=Starcadian-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=pZoYJ5vG6f0">Moving In The Dark</a>
+            <p class="author">Neon Trees</p>
+            <p class="linkText">https://www.youtube.com/watch?v=pZoYJ5vG6f0</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=VgRoxf0b8UQ&ab_channel=GreekFire">A Real Life</a>
+            <p class="author">Greek Fire</p>
+            <p class="linkText">https://www.youtube.com/watch?v=VgRoxf0b8UQ&ab_channel=GreekFire</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=8FR0u0lnUh4">Jesse James</a>
+            <p class="author">Clay Walker</p>
+            <p class="linkText">https://www.youtube.com/watch?v=8FR0u0lnUh4</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=wTWOAJJ9s1g">How Far We've Come</a>
+            <p class="author">Matchbox 20</p>
+            <p class="linkText">https://www.youtube.com/watch?v=wTWOAJJ9s1g</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=JbSpaEebXt4">Beyond The Darkest Sun</a>
+            <p class="author">Sunburst</p>
+            <p class="linkText">https://www.youtube.com/watch?v=JbSpaEebXt4</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=fmxOUIddBm0&ab_channel=ClaudiaSoppelsa">I Still Haven't Found What I'm Looking For</a>
+            <p class="author">U2</p>
+            <p class="linkText">https://www.youtube.com/watch?v=fmxOUIddBm0&ab_channel=ClaudiaSoppelsa</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=KMbyup1xuFI&ab_channel=MattNathanson">Giants</a>
+            <p class="author">Matt Nathanson</p>
+            <p class="linkText">https://www.youtube.com/watch?v=KMbyup1xuFI&ab_channel=MattNathanson</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=HdeYwObD-j4">Robot Rock</a>
+            <p class="author">Daft Punk</p>
+            <p class="linkText">https://www.youtube.com/watch?v=HdeYwObD-j4</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=PguLNvCcOHQ&ab_channel=BigGiantCircles">Raindancer</a>
+            <p class="author">Big Giant Circles</p>
+            <p class="linkText">https://www.youtube.com/watch?v=PguLNvCcOHQ&ab_channel=BigGiantCircles</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=imVor17PK-U&ab_channel=Shinedown">A Symptom of Being Human</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=imVor17PK-U&ab_channel=Shinedown</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=R9rG1G-Yr_Q">Goodnight Saigon</a>
+            <p class="author">Billy Joel</p>
+            <p class="linkText">https://www.youtube.com/watch?v=R9rG1G-Yr_Q</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=S-Gw9KBxltQ&ab_channel=MoronPolice-Topic">Isn't It Easy</a>
+            <p class="author">Moron Police</p>
+            <p class="linkText">https://www.youtube.com/watch?v=S-Gw9KBxltQ&ab_channel=MoronPolice-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://web.archive.org/web/20220326105750/https://www.youtube.com/watch?v=FRPeYP6gS-s">Country Roads (Fallout 76 trailer version)</a>
+            <p class="author">Cover by Spank, original by John Denver</p>
+            <p class="linkText">https://web.archive.org/web/20220326105750/https://www.youtube.com/watch?v=FRPeYP6gS-s</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=kc_tcjCBb2s&ab_channel=LyricMaster%21">House of the Rising Sun, Five Finger Death Punch Cover</a>
+            <p class="author">cover by Five Finger Death Punch, original author completely unknown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=kc_tcjCBb2s&ab_channel=LyricMaster%21</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=YiVkAvm-BVE&ab_channel=Shinedown">Atlas Falls</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=YiVkAvm-BVE&ab_channel=Shinedown</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=LQZLPV6xcHI&ab_channel=jennysYT">Sunday Bloody Sunday</a>
+            <p class="author">U2</p>
+            <p class="linkText">https://www.youtube.com/watch?v=LQZLPV6xcHI&ab_channel=jennysYT</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=_xHNDiZQv6w&ab_channel=U2">Sunday Bloody Sunday (acoustic version)</a>
+            <p class="author">U2</p>
+            <p class="linkText">https://www.youtube.com/watch?v=_xHNDiZQv6w&ab_channel=U2</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=YoFJgLmbYZE&ab_channel=catherine1853">You Make My Dreams</a>
+            <p class="author">Hall & Oates</p>
+            <p class="linkText">https://www.youtube.com/watch?v=YoFJgLmbYZE&ab_channel=catherine1853</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=8ejF8Qv6VZk&ab_channel=almostglitterybeard">Honey, I'm Good</a>
+            <p class="author">Andy Grammer</p>
+            <p class="linkText">https://www.youtube.com/watch?v=8ejF8Qv6VZk&ab_channel=almostglitterybeard</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=H_pRyMShJ0k&ab_channel=CocoaDoodle">Everybody Talks</a>
+            <p class="author">Neon Trees</p>
+            <p class="linkText">https://www.youtube.com/watch?v=H_pRyMShJ0k&ab_channel=CocoaDoodle</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=LNRVy4CN5xw&ab_channel=Shinedown">Dysfunctional You</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=LNRVy4CN5xw&ab_channel=Shinedown</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Cp4sYSQEjc8&ab_channel=MeganLouiseGilray">Rhinestone Cowboy</a>
+            <p class="author">Glen Campbell</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Cp4sYSQEjc8&ab_channel=MeganLouiseGilray</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=NwdYT__rp3A&ab_channel=LincolnGrounds-Topic">Little Bit of Rock</a>
+            <p class="author">Lincoln Grounds & Pat Reyford</p>
+            <p class="linkText">https://www.youtube.com/watch?v=NwdYT__rp3A&ab_channel=LincolnGrounds-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=NwdYT__rp3A&ab_channel=LincolnGrounds-Topic">Red Cadillac</a>
+            <p class="author">Lincoln Grounds & Pat Reyford</p>
+            <p class="linkText">https://www.youtube.com/watch?v=NwdYT__rp3A&ab_channel=LincolnGrounds-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=Hq_J-XVOucg&ab_channel=KONGOS-Topic">Come With Me Now</a>
+            <p class="author">KONGOS</p>
+            <p class="linkText">https://www.youtube.com/watch?v=Hq_J-XVOucg&ab_channel=KONGOS-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=bRKs7CJRBy4&ab_channel=MoronPolice-Topic">The Undersea</a>
+            <p class="author">Moron Police</p>
+            <p class="linkText">https://www.youtube.com/watch?v=bRKs7CJRBy4&ab_channel=MoronPolice-Topic</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=AZv8S806y_Y&ab_channel=O.A.R.%28OfARevolution...%29">I Go Through</a>
+            <p class="author">O.A.R. (Of A Revolution...)</p>
+            <p class="linkText">https://www.youtube.com/watch?v=AZv8S806y_Y&ab_channel=O.A.R.%28OfARevolution...%29</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=q4O_1MdWVo4&ab_channel=MrMusicKid15">What A Shame</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=q4O_1MdWVo4&ab_channel=MrMusicKid15</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=tXsxvdF481I&ab_channel=EshitaNandini">Superstition</a>
+            <p class="author">Stevie Wonder</p>
+            <p class="linkText">https://www.youtube.com/watch?v=tXsxvdF481I&ab_channel=EshitaNandini</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=DEseb6-hssc">19th Nervous Breakdown</a>
+            <p class="author">The Rolling Stones</p>
+            <p class="linkText">https://www.youtube.com/watch?v=DEseb6-hssc</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=P1SvJQGy1SU&ab_channel=scandalousmelon">Unity</a>
+            <p class="author">Shinedown</p>
+            <p class="linkText">https://www.youtube.com/watch?v=P1SvJQGy1SU&ab_channel=scandalousmelon</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=GJEA0RlVUsI&ab_channel=OscarMacas">The Sound of Silence (Disturbed cover)</a>
+            <p class="author">cover by Disturbed, original by Simon & Garfunkel</p>
+            <p class="linkText">https://www.youtube.com/watch?v=GJEA0RlVUsI&ab_channel=OscarMacas</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=MN9YLLQl7gE">EAZY SLEAZY</a>
+            <p class="author">Mick Jagger & Dave Grohl</p>
+            <p class="linkText">https://www.youtube.com/watch?v=MN9YLLQl7gE</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+        <li>
+          <div class="panel">
+            <!--Convert the p to a and add href=link-->
+            <a class="name" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Never Gonna Give You Up</a>
+            <p class="author">Rick Astley</p>
+            <p class="linkText">https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley</p>
+            <!--<p class="tags"><img class="tag" src="WhiteTag.png" alt="Tag"/>a tag <img class="tag" src="WhiteTag.png" alt="Tag"/>a tag</p>-->
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </main>
+</body>
+</html>
